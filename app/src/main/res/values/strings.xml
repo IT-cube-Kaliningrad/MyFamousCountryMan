@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">dedivoevali</string>
+    <string name="app_name">MyFamousContryman</string>
+    <string name="mfcm_filter_title">Фильтр</string>
+    <string name="mfcm_search_title">Поиск</string>
+    <string name="mfcm_product_title">Заголовок</string>
+
+    <string name="mfcm_name">Имя</string>
+    <string name="mfcm_surname">Фамилия</string>
+    <string name="mfcm_thirdname">Отчество</string>
+    <string name="mfcm_type_of_activity">Вид деятельности</string>
+
 </resources>

@@ -7,22 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_continue"
-        android:layout_width="331dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="Продолжить"
-        android:fontFamily=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/homeBackground"
-        app:layout_constraintStart_toStartOf="@id/homeBackground"
-        app:layout_constraintTop_toTopOf="@id/homeBackground"
-        app:layout_constraintVertical_bias="0.76" />
 
     <ImageView
         android:id="@+id/homeBackground"
@@ -32,5 +16,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/firasanscondensedsemibold"
+        android:text="Продолжить"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/homeBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="305dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/firasanscondensedsemibold"
+        android:gravity="center"
+        android:text="Мои знаменитые земляки"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

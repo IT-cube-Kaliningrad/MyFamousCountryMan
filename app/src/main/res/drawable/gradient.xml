@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Градиент для элементов управления-->
+    <item>
+        <shape>
+            <gradient android:startColor="#fbbe3f"
+                android:angle="135"
+                android:endColor="#9c5632"
+                android:type="linear"
+                ></gradient>
+                <corners android:radius="32dp" />
+        </shape>
+    </item>
+
+
+</selector>
