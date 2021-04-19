@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dedivoevali">
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SecondActivity" />
         <activity android:name=".FullImageActivty" />
         <activity android:name=".SecondAct">
             <intent-filter>

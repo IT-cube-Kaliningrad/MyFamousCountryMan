@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Градиент для элементов управления-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFF"></solid>
+            <stroke android:width="5dp" android:color="#FFF"></stroke>
+            <corners android:radius="32dp" />
+        </shape>
+    </item>
+</selector>
