@@ -1,4 +1,4 @@
-package com.example.dedivoevali;
+package com.example.myfamouscontrymen;
 
 import androidx.appcompat.app.AppCompatActivity;
 

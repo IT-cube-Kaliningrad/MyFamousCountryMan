@@ -1,4 +1,4 @@
-package com.example.dedivoevali;
+package com.example.myfamouscontrymen;
 
 import org.junit.Test;
 
