@@ -1,26 +1,40 @@
 package com.example.myfamouscontrymen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationHost {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn = (Button) findViewById(R.id.button_continue);
-        btn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
-                startActivity(intent);
-            }
-        });
+        if (savedInstanceState == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.container, new ContinueFragment())
+                    .commit();
+        }
+    }
+
+    @Override
+    public void navigateTo(Fragment fragment, boolean addToBackstack) {
+        FragmentTransaction transaction =
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container, fragment);
+
+        if (addToBackstack) {
+            transaction.addToBackStack(null);
+        }
+
+        transaction.commit();
     }
 }

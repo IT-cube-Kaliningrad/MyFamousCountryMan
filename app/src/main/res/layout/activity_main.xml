@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
-    <ImageView
-        android:id="@+id/homeBackground"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home" />
-
-    <Button
-        android:id="@+id/button_continue"
-        android:layout_width="350dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="150dp"
-        android:background="@drawable/gradient"
-        android:fontFamily="@font/firasanscondensedsemibold"
-        android:text="Продолжить"
-        android:textSize="20sp"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/homeBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="305dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/firasanscondensedsemibold"
-        android:gravity="center"
-        android:text="Мои знаменитые земляки"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_continue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".MainActivity" />
